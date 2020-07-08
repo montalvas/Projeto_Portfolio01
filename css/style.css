@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+/* PAINEL LATERAL */
+
+aside{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.align-aside{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.foto{
+    text-align: center;
+}
+
+.foto img{
+    width: 80%;
+    border: 4px solid #27a0a0;
+    border-radius: 50%;
+}
+
+nav{
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav li{
+    margin-bottom: 20px;
+}
+
+nav a{
+    font-size: 28px;
+    color: white;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+nav a:hover{
+    opacity: 1;
+}
+
+/* CONTEUDO */
+
+main{
+    width: 80%;
+    height: 100%;
+    padding: 0 3%;
+    position: absolute;
+    left: 20%;
+    overflow-y: auto;
+    background-image: rgb(230,230,230);
+}
+
+/* ABOUT */
+
+.description{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.description h2{
+    color: #343a40;
+    font-size: 50px;
+}
+
+.description h3{
+    margin: 15px 0;
+    color: #6c757d;
+    font-size: 30px;
+}
+
+.description span{
+    color: #269c9c;
+}
+
+.description p{
+    color: #6c757d;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.social-icons i{
+    line-height: 40px;
+}
+
+/* EXPERIENCE */
+
+.experience{
+    position: relative;
+    top: 150%;
+    transform: translateY(-100%);
+}
+
+.one, .two, .three{
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+}
+
+.clear{
+    clear: both;
+}
+
+.experience h2{
+    color: #343a40;
+    font-size: 40px;
+}
+
+.experience h3{
+    margin: 10px 0;
+    color: #269c9c;
+    font-size: 28px;
+}
+
+.experience ul{
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.experience li{
+    list-style-position: inside;  
+    color: #6c757d;
+    font-size: 20px;
+}
+
+/*EDUCATION*/
+
+.education{
+    position: relative;
+    top: 200%;
+    transform: translateY(-150%);
+}
+
+.education h2{
+    color: #343a40;
+    font-size: 40px;
+}
+
+.education h3{
+    margin: 10px 0;
+    color: #269c9c;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+/*COPYRIGHT*/
+
+footer{
+    position: relative;
+    top:200%;
+    font-size: 25px;
+    color: #269c9c;
+    text-align: center;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 1024px){
+
+    /* PAINEL LATERAL */
+
+    aside{
+        width: 30%;
+    }
+
+    .foto img{
+        width: 90%;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    /* CONTEUDO */
+
+    main{
+        width: 70%;
+        left: 30%;
+    }
+    
+    /* ABOUT */
+
+    .description{
+        text-align: center;
+    }
+
+    .description h2{
+        font-size: 42px;
+    }
+
+    .description h3{
+        margin: 10px 0;
+        font-size: 24px;
+    }
+
+    .description p{
+        font-size: 20px;
+    }
+
+    /* EXPERIENCE */
+
+    .experience{
+        position: relative;
+        top: 150%;
+        transform: translateY(-50%);
+    }
+
+    .one, .two, .three{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .clear{
+        clear: both;
+    }
+
+    .experience h2{
+        font-size: 36px;
+    }
+
+    .experience h3{
+        margin: 8px 0;
+        font-size: 26px;
+    }
+
+    .experience li{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /*EDUCATION*/
+
+    .education{
+        width: 90%;
+        top: 150%;
+        transform: translateY(-100%);
+        text-align: center;
+    }
+
+    .education h2{
+        font-size: 36px;
+    }
+
+    .education h3{
+        margin: 10px 20px;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /*COPYRIGHT*/
+
+    footer{
+        top: 150%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
